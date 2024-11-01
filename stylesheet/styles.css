@@ -1,0 +1,373 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00ff9d2a;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+}
+
+.img-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-name img {
+    width: 35px;
+    height: 35px;
+}
+
+.img-name h1 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 0px;
+}
+
+.slogan-msg p {
+    line-height: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #FEFFA7;
+    padding: 8px 0px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #000;
+    font-weight: 500;
+}
+
+#featured {
+    position: relative;
+    background-image: url('/imgs/hero1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#featured h2 {
+    font-weight: 400;
+}
+
+#featured .overlay {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
+#packages {
+    text-align: center;
+    padding: 20px;
+}
+
+#packages h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+#packageTable {
+    width: 100%;
+    margin: 0px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#packageTable th, #packageTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#packageTable th {
+    background-color: #00FF9C;
+    text-transform: uppercase;
+}
+
+#packageTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#packageTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+#highlightButton {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #00FF9C;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#highlightButton:hover {
+    background-color: #00ff9d6e;
+}
+
+    /* Card Container */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    /* Individual Card */
+    .card {
+        background-color: rgb(242, 255, 239);
+        border-radius: 8px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+        width: 300px;
+        text-align: left;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    /* Card Hover Effect */
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    /* Card Image */
+    .card-img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    /* Card Content */
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-content h3 {
+        font-size: 1.2em;
+        /* margin-bottom: 10px; */
+        line-height: 0;
+    }
+
+    .card-content p {
+        margin: 5px 0;
+        font-size: 0.95em;
+    }
+
+    /* Font Awesome Icon Color */
+    .card-content i {
+        color: #4CAF50;
+        margin-right: 8px;
+    }
+
+#map {
+    background-color: #00ff9d2a;
+}
+
+#map-content {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+#map h2, #destinations h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#map iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 0;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contact-links {
+    margin-top: 2rem;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-link a {
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-link a:hover {
+    color: #00dc88;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00dc88;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.contact img {
+    width: 400px;
+    height: auto;
+}
+
+/* Button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #00FF9C;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background: #00dc88;
+}
+
+footer {
+    background-color: #151225;
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 10px 0px;
+}
+
+footer a {
+    color: #00FF9C;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px 5px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00ff9dc2;
+}
+
+footer p:last-child {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}

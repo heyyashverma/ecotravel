@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTravel - Discover the World, Sustainably</title>
+
+    <!-- Importing Poppins font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="stylesheet/styles.css" />
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class='header-content'>
+            <!-- Logo and Website Name -->
+            <div class='img-name'>
+                <img src="imgs/logo.svg" alt="EcoTravel Logo" width="100">
+                <h1>ecotravel</h1>
+            </div>
+            <!-- Slogan and Welcome Message -->
+            <div class='slogan-msg'>
+                <p><b>Discover the World, Sustainably</b></p>
+                <p id="welcomeMessage"></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="#destinations">Popular Destinations</a></li>
+            <li><a href="#packages">Travel Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Featured Section with a Hero Image -->
+        <section id="featured">
+            <div class="overlay">
+                <h2>Explore Eco-Friendly Travel Packages</h2>
+            </div>
+        </section>
+        
+        <section class="container" id="destinations">
+            <h2>Popular Travel Destinations</h2>
+        
+            <div class="card-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="/imgs/amazon.jpg" alt="Amazon Rainforest" class="card-img">
+                    <div class="card-content">
+                        <h3>Amazon Rainforest <i class="fas fa-tree"></i></h3>
+                        <p><i class="fas fa-leaf"></i> Biodiversity & Wildlife</p>
+                        <p><i class="fas fa-water"></i> River Cruises & Eco-lodges</p>
+                    </div>
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="/imgs/costarica.jpg" alt="Costa Rica" class="card-img">
+                    <div class="card-content">
+                        <h3>Costa Rica <i class="fas fa-sun"></i></h3>
+                        <p><i class="fas fa-binoculars"></i> Rainforests & Beaches</p>
+                        <p><i class="fas fa-fire"></i> Volcanoes & Zip-Lining</p>
+                    </div>
+                </div>
+        
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="/imgs/iceland.jpg" alt="Iceland Wilderness" class="card-img">
+                    <div class="card-content">
+                        <h3>Iceland Wilderness <i class="fas fa-snowflake"></i></h3>
+                        <p><i class="fas fa-water"></i> Geysers & Waterfalls</p>
+                        <p><i class="fas fa-fire-alt"></i> Northern Lights</p>
+                    </div>
+                </div>
+        
+                <!-- Card 4 -->
+                <div class="card">
+                    <img src="/imgs/thailand.jpg" alt="Thailand Eco-Tour" class="card-img">
+                    <div class="card-content">
+                        <h3>Thailand Eco-Tour <i class="fas fa-spa"></i></h3>
+                        <p><i class="fas fa-umbrella-beach"></i> Tropical Islands</p>
+                        <p><i class="fas fa-leaf"></i> Cultural Immersion</p>
+                    </div>
+                </div>
+        
+                <!-- Card 5 -->
+                <div class="card">
+                    <img src="/imgs/galapagos.jpg" alt="Galapagos Adventure" class="card-img">
+                    <div class="card-content">
+                        <h3>Galapagos Adventure <i class="fas fa-fish"></i></h3>
+                        <p><i class="fas fa-seedling"></i> Unique Ecosystem</p>
+                        <p><i class="fas fa-swimmer"></i> Snorkeling & Hiking</p>
+                    </div>
+                </div>
+        
+                <!-- Card 6 -->
+                <div class="card">
+                    <img src="/imgs/japan.jpg" alt="Japan Cultural Tour" class="card-img">
+                    <div class="card-content">
+                        <h3>Japan Cultural Tour <i class="fas fa-landmark"></i></h3>
+                        <p><i class="fa-solid fa-gopuram"></i> Temples & Culture</p>
+                        <p><i class="fa-solid fa-mug-hot"></i> Tea Ceremonies</p>
+                    </div>
+                </div>
+        
+                <!-- Card 7 -->
+                <div class="card">
+                    <img src="/imgs/australia.jpg" alt="Australia Outback Adventure" class="card-img">
+                    <div class="card-content">
+                        <h3>Australia Outback <i class="fas fa-hiking"></i></h3>
+                        <p><i class="fas fa-globe-americas"></i> Desert & Uluru</p>
+                        <p><i class="fa-solid fa-hippo"></i> Wildlife & Culture</p>
+                    </div>
+                </div>
+        
+                <!-- Card 8 -->
+                <div class="card">
+                    <img src="/imgs/greece.jpg" alt="Greece Islands Getaway" class="card-img">
+                    <div class="card-content">
+                        <h3>Greece Islands <i class="fas fa-ship"></i></h3>
+                        <p><i class="fas fa-water"></i> Beaches & Waters</p>
+                        <p><i class="fas fa-utensils"></i> Cuisine & History</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <!-- Travel Packages Table Section -->
+        <section class='container' id="packages">
+            <h2>Our Travel Packages</h2>
+            <!-- Travel Packages Table -->
+            <table id="packageTable">
+                <tr>
+                    <th>Destination</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                    <th>Sustainability Rating</th>
+                </tr>
+                <tr>
+                    <td>Amazon Rainforest</td>
+                    <td>7 Days</td>
+                    <td>$2,500</td>
+                    <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></td>
+                </tr>
+                <tr>
+                    <td>Costa Rica</td>
+                    <td>5 Days</td>
+                    <td>$1,500</td>
+                    <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></td>
+                </tr>
+                <tr>
+                    <td>Iceland Wilderness</td>
+                    <td>10 Days</td>
+                    <td>$3,000</td>
+                    <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></td>
+                </tr>
+                <tr>
+                    <td>Thailand Eco-Tour</td>
+                    <td>7 Days</td>
+                    <td>$2,200</td>
+                    <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></td>
+                </tr>
+                <tr>
+                    <td>Galapagos Adventure</td>
+                    <td>8 Days</td>
+                    <td>$3,500</td>
+                    <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></td>
+                </tr>
+            </table>
+            <!-- Button for Highlighting Packages (possibly a feature controlled by JavaScript) -->
+            <button id="highlightButton">Highlight Packages</button>
+        </section>
+
+        <!-- Featured Map Section for Costa Rica -->
+        <section id='map'>
+            <div class='container' id="map-content">
+                <h2>Featured Destination: Costa Rica</h2>
+                <!-- Embedded Google Map for Costa Rica -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1014294.5533750744!2d-85.00000465!3d9.748917399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f92e56221acc925%3A0x6254f72535819a2b!2sCosta%20Rica!5e0!3m2!1sen!2sus!4v1652893681688!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>We are always happy to hear your query, our team is waiting for your message.</p>
+                    <img src="/imgs/contact.svg" alt="contact">
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+        
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact Us: Phone: (123) 456-7890 | Email: info@ecotravel.com</p>
+        <p>Follow us on: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+        <p>&copy; 2024 EcoTravel. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
