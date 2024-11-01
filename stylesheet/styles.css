@@ -76,7 +76,7 @@ nav ul li a:hover {
 
 #featured {
     position: relative;
-    background-image: url('/imgs/hero1.jpg');
+    background-image: url('imgs/hero1.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
